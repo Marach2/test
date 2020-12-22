@@ -1,7 +1,7 @@
 /* Servo motor with Arduino example code. Position and sweep. More info: https://www.makerguides.com/ */
 // Include the servo library:
 #include <Servo.h>
-
+// LAS CONEXIONES NO SE REALIZAN A PINES ANALÓGICOS, SI NO A PWM (PINES DIGITALES CON EL SÍMBOLO "~").
 // Create a new servo object:
 Servo servoPeq;
 Servo servoPeq1;
@@ -9,10 +9,10 @@ Servo servoGra1;
 Servo servoGra2;
 
 // Define the servo pin:
-#define servoPinPeq A0 //Pequeño
-#define servoPinPeq1 A1
-#define servoPinGra1 A2
-#define servoPinGra2 A4
+#define servoPinPeq 3 //Pequeño
+#define servoPinPeq1 9
+#define servoPinGra1 10
+#define servoPinGra2 11
 
 // Create a variable to store the servo position:
 int angle = 0;
